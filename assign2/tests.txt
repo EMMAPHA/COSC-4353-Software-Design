@@ -1,0 +1,29 @@
+x canary test
+x process_empty text
+
+x process_text 'hello'
+x process_text "blah" which we will consider wrong spelling and expect "[blah]" as response
+
+x process_text takes "hello there" and returns "hello there"
+x process_text takes "hello tyop" and returns "hello [tyop]"
+x process_text takes "misp hello" and returns "[misp] hello"
+
+x process_text takes "hello tyop there misp" and returns "hello [tyop] there [misp]"
+
+x process_text takes text with two lines and returns text with two lines
+x process_text takes text with two lines with some incorrect spelling words and returns appropriate result
+
+x process_text takes text with three lines and returns text with three lines
+x process_text takes text with three lines with some incorrect spelling words and returns appropriate result
+
+x process_text takes text "hello there how aare you" but runs into an exception from the spellchecker when looking up spelling for there
+
+x getresponse for a word returns a value
+
+x parseresponse returns a true value
+x parseresponse returns a false value
+
+x is_spelling_correct calls get_response and parse_response to check the spelling
+x is_spelling_correct passes on the exception from get_response
+
+x let's create the UI

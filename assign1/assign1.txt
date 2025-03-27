@@ -1,0 +1,44 @@
+Assign1: Due 11:59PM CT September 27 [Extended 11:59PM CT October 4]
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+Using Test First Development (no code without test first) let's implement the problem designed in hw2. Feel free to evolve that design and use judgment to make changes based on the improved understanding and learning. You are not required to use any of the design idea or languages you mentioned in hw2, apply decisions based on your renewed learnings.
+
+Please take small steps and ask for frequent reviews.
+
+First start with a tests list (tests.txt) and a canary test. Implement at most two more tests and minimum code to make those tests to pass. This is a great first step to complete and ask for a review.
+
+After completing the assignment (and only after) let's answer the following questions:
+
+1. What did you learn mainly in this assignment?
+
+The biggest takeaway from this assignment was realizing just how important test-driven development (TDD) is for writing reliable and maintainable code. Starting with a tests list and a canary test really highlighted the value of testing early, making sure our code stays solid as we build on it. By focusing on writing just the minimum code needed to pass each test, we were able to keep things precise and avoid adding unnecessary complexity. This step-by-step process gave us a clear, structured way to develop the solution incrementally.
+
+We also came to appreciate how crucial it is to choose the right data types and keep the code minimal. Doing so helped us keep things clear and stable. With continuous testing and feedback, we were able to tweak and refine the code, ensuring it met all the requirements without getting too complicated.
+
+Overall, adopting a test-driven approach allowed us to write code that's not only more reliable but also more flexible and easier to maintain. This assignment reinforced how starting small and iterating step by step leads to better design choices, fewer errors, and smoother changes down the line.
+
+
+2. How is the current design different, if at all, from the strategic design created in hw2?
+
+In contrast to the strategic design, we did not create a MasterMindGame class as initially planned. Instead, we opted to keep the game logic in one module. As we implemented the game, we realized that breaking down the logic into individual functions, such as play and guess, made it simpler and more modular, facilitating easier testing and maintenance. This approach allowed us to streamline the core logic without needing to introduce extra class structures.
+
+Our UML design originally included the classes GameUI and MasterMindGameLogic, which we later refined during development. Additionally, our UI design shifted from the original UML concept. Initially, we planned to separate the grid and other interface components into distinct UI classes. However, during development, we decided to handle UI functionality through functions embedded in the main MastermindUI class. This adjustment simplified the design, reducing the number of classes and keeping the UI logic tightly coupled with the gameplay interaction.
+
+We also modified our implementation to ensure compatibility across platforms, specifically Windows and Mac. In the create_color_options function, we introduced platform-specific handling by using the tkmacosx library for macOS systems and regular tkinter buttons for Windows. This ensured that the button sizes and color displays worked consistently across both operating systems, a requirement not initially addressed in the strategic design.
+
+Lastly, in the final implementation, we relied on a global play function to manage the game's state, which interacts directly with the UI. The logic is encapsulated within this function, and the UI updates based on the game's state changes. This design choice deviated from our initial plan of separating the UI and logic more distinctly.
+
+Overall, the changes we made have contributed to a more focused design, enhancing the clarity and maintainability of the Mastermind game implementation.
+
+
+3. Were there any surprises or things you did not expect along the way? Any particular problem faced, things you had to tackle that you did not expect beforehand?
+
+We were honestly surprised by how little code was needed to pass the initial tests. The emphasis on writing the "minimum code to pass the test cases" was a big shift from what we're used to. Instead of thinking ahead and planning for future features, we had to stay focused on the immediate task at hand, which was a bit challenging at first. It took some time to adjust to this more incremental approach.
+
+One challenge we didn't expect was figuring out the logic for checking the player's guesses. We had to ensure the program could accurately handle both exact matches (correct color and position) and partial matches (correct color, wrong position). Tackling this while sticking to the test-driven approach required us to address one small part of the problem at a time, which felt a bit limiting but kept us from overcomplicating things.
+
+Another surprise was how much thought we had to put into keeping the code clear and stable. We wanted to make sure that our decisions wouldn't cause issues later on, but at the same time, we had to avoid making the solution more complex than it needed to be. This balancing act definitely required several iterations and feedback to get it right.
+
+Total [100]: 100
