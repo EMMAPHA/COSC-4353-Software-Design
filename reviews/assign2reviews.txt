@@ -1,0 +1,292 @@
+[Reviewed 10/17/24 06:49 AM EDT]
+synopsis: let's write minimum code
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/16/24 18:57 PM EDT]
+synopsis: ran into an issue
+
+details:
+
+>paver
+...
+ModuleNotFoundError: No module named 'requests'
+
+------------------------------------------------------------------------------
+[Reviewed 10/16/24 18:40 PM EDT]
+synopsis: ran into an issue
+
+details:
+
+>paver
+...
+ModuleNotFoundError: No module named 'requests'
+
+------------------------------------------------------------------------------
+[Reviewed 10/16/24 09:58 AM EDT]
+synopsis: ran into an issue, also SRP and OCP violation
+
+details:
+
+>paver
+...
+ModuleNotFoundError: No module named 'requests'
+
+------------------------------------------------------------------------------
+[Reviewed 10/16/24 08:10 AM EDT]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/14/24 20:33 PM MDT]
+synopsis: is it ideal?
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/13/24 12:27 PM MDT]
+synopsis: no lying to the users
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/13/24 12:13 PM MDT]
+synopsis: what is the reason?
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/13/24 12:02 PM MDT]
+synopsis: no lying to the users
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/13/24 04:39 AM MDT]
+synopsis: let's check the test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/12/24 18:53 PM MDT]
+synopsis: let's check the test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/12/24 07:37 AM MDT]
+synopsis: 
+
+details:
+
+------------------------------------------------------------------------------
+[Reviewed 10/11/24 17:07 PM MDT]
+synopsis: good work so far
+
+details:
+
+Good work so far. Let's move forward to the next few tests.
+
+------------------------------------------------------------------------------
+[Reviewed 10/11/24 06:36 AM MDT]
+synopsis: indentation
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/10/24 20:08 PM MDT]
+synopsis: let's check indentation
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/10/24 18:47 PM MDT]
+synopsis: let's refactor
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/10/24 17:50 PM MDT]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a quick review.
+
+------------------------------------------------------------------------------
+[Reviewed 10/10/24 10:48 AM MDT]
+synopsis: SLAP again
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/09/24 20:26 PM EDT]
+synopsis: let's make things easier to read
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/09/24 16:21 PM EDT]
+synopsis: good so far
+
+details:
+
+Good so far. Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/09/24 18:16 PM CEST]
+synopsis: let's refactor
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/09/24 06:15 AM CEST]
+synopsis: SLAP
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/09/24 05:11 AM CEST]
+synopsis: let's rework the last test into a few tests
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/08/24 09:13 AM CEST]
+synopsis: let's move forward to the next test
+
+details:
+
+Good so far. Let's move forward to the next test.
+
+------------------------------------------------------------------------------
+[Reviewed 10/08/24 05:21 AM CEST]
+synopsis~: do we need it?
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/08/24 04:48 AM CEST]
+synopsis: let's move forward to the next test
+
+details:
+
+Good so far. Let's move forward to the next test.
+
+------------------------------------------------------------------------------
+[Reviewed 10/07/24 16:54 PM CEST]
+synopsis: let's simplify and also keep code minimum
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/07/24 10:32 AM CEST]
+synopsis: do we want to hard code?
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/06/24 17:49 PM MDT]
+synopsis: let's focus on a different test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/06/24 17:04 PM MDT]
+synopsis~: let's take the next step
+
+details:
+
+Let's take the next step.
+
+------------------------------------------------------------------------------
+[Reviewed 10/06/24 12:18 PM MDT]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/06/24 11:39 AM MDT]
+synopsis: minimum code to make test pass
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/06/24 10:26 AM MDT]
+synopsis: what are we designing?
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/06/24 05:23 AM MDT]
+synopsis~: let's check the test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/05/24 19:30 PM MDT]
+synopsis: comment found in code
+
+details:
+
+Comment found in code - smelly.
+
+------------------------------------------------------------------------------
+[Reviewed 10/05/24 09:22 AM MDT]
+synopsis~: let's move forward to one test beyond canary
+
+details:
+
+Let's move forward to one test beyond canary.
+
+------------------------------------------------------------------------------

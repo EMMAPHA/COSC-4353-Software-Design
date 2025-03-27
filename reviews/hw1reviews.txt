@@ -1,0 +1,95 @@
+[Reviewed 09/05/24 06:02 AM EDT]
+synopsis: let's revisit 2
+
+details:
+
+
+2.
+
+" heavily on each other's implementation details rather than abstract interfaces. Tight coupling does not imply cyclic dependency but rather that the components are tightly linked, making them less flexible and harder to maintain." Then let us not say each other and we can entirely drop the sentence about cyclic dependency. Rather than saying each other we can say one on another (obviously not in exactly those words but placed appropriately in a sentence to avoid conveying each other as in cycles).
+
+How does tight coupling really impact scalability? It is more about code maintenance than about scale as scale relates to runtime performance, tightly coupled code can be as performant as loosely coupled (may be even more so in reality). So, is this really related to scalability? Or it it more about extensibility? Remove anything that is not directly relevant.
+
+4.
+
+Good work here.
+
+------------------------------------------------------------------------------
+[Reviewed 09/04/24 17:03 PM CEST]
+synopsis: a few things need rework
+
+details:
+
+2.
+
+"These components are highly dependent on each other." Does tight coupling mean cyclic dependency, depending on one another?
+
+"It may be needed to scale the entire application in order to add scale to just one component. " What does scale mean?
+
+"For example, when we have frontend components connected to the backend components in a tightly coupled app, even small changes to add new features to the backend can disrupt the entire frontend." Generally this is not how tight coupling manifests.
+
+May be we should state what tight and loose coupling really means first.
+
+"as the components have minimal dependencies on each other" minimal as in fewer?
+
+"scalability of design." What does scalability mean?
+
+Is tight coupling depending on an implementation whereas loose coupling depending on an interface without the knowledge or dependency on an implementation?
+
+3.
+
+Good work here.
+
+4.
+
+"Incoming dependencies are other tasks or pieces of code that should be completed for a given project to succeed."  It is not.
+
+"There could be tight coupling between modules, " Large number of incoming dependencies do not require tight coupling.
+
+What are incoming dependencies (I discussed this on the mailing list in respond to a question)? Let's state that and then discuss the risks and if it make the code in context fragile or rigid, that is resistant to change.
+
+------------------------------------------------------------------------------
+[Reviewed 09/04/24 06:29 AM CEST]
+synopsis: let's revisit a few things
+
+details:
+
+2.
+
+Is there an impact on extensibility?
+
+The word scalability is used here quite differently than what it generally means in the industry.
+
+3.
+
+"However, having a large number of outgoing dependencies doesn't necessarily imply tight coupling. The code could still be loosely coupled if the dependencies are well-abstracted, meaning the interactions between modules are minimal and changes in one module have little impact on others. Loose coupling is more about the nature of the interactions between the components rather than the number of dependencies." This paragraph is irrelevant.
+
+Does the code become more fragile or more stable?
+
+4.
+
+Let's write in multiple short paragraphs.
+
+------------------------------------------------------------------------------
+[Reviewed 09/03/24 05:00 AM CEST]
+synopsis: Good work so far
+
+details:
+
+
+1.
+
+Good work here.
+
+2.
+Avoid bullet points, instead let us write in multiple short paragraphs with complete sentences.
+
+3.
+
+Can it be loosely coupled and have a large number of outgoing dependencies? In other words, is this directly related to tight vs. loose coupling?
+
+4.
+
+Avoid bullet points, instead let us write in multiple short paragraphs with complete sentences.
+
+------------------------------------------------------------------------------

@@ -1,0 +1,227 @@
+[Reviewed 10/31/24 05:13 AM MDT]
+synopsis: let's check the test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/30/24 11:39 AM MDT]
+synopsis: what principle?
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/30/24 05:43 AM MDT]
+synopsis: let's refactor and move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/29/24 20:24 PM MDT]
+synopsis: let's refactor
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/29/24 18:31 PM MDT]
+synopsis: build is failing
+
+details:
+
+Build is failing.
+
+
+------------------------------------------------------------------------------
+[Reviewed 10/29/24 17:42 PM MDT]
+synopsis: previous feedback was ignored and removed
+
+details:
+
+Previous feedback was ignored and removed.
+
+------------------------------------------------------------------------------
+[Reviewed 10/29/24 17:28 PM MDT]
+synopsis: let's check the test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/29/24 05:41 AM MDT]
+synopsis: let's check the test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/28/24 05:47 AM CDT]
+synopsis: let's check the test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/27/24 18:14 PM CDT]
+synopsis: let's check the test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/27/24 08:52 AM CDT]
+synopsis: let's move forward
+
+details:
+
+Let's move forward. Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/26/24 09:03 AM CDT]
+synopsis: let's check where the files are
+
+details:
+
+All the criteria files are dumped right now into the src directory. Is there a better way to organize these files?
+
+------------------------------------------------------------------------------
+[Reviewed 10/26/24 06:35 AM CDT]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/25/24 05:28 AM CDT]
+synopsis: let's revisit a previous test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/24/24 17:13 PM MDT]
+synopsis: OCP and DRY
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/24/24 10:07 AM CEST]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/23/24 21:30 PM CEST]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/23/24 15:01 PM CEST]
+synopsis: continuing to learn not to write
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/22/24 21:11 PM CDT]
+synopsis: SRP and learning to not write
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/22/24 16:41 PM CDT]
+synopsis: we exercise our rights, but growing our wisdom
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/22/24 16:11 PM CDT]
+synopsis: SRP and wisdom not to write yet
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/22/24 11:13 AM CDT]
+synopsis: minimum code to make the tests pass
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/22/24 07:48 AM CDT]
+synopsis~: a few things to revisit
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/21/24 08:43 AM CDT]
+synopsis: let's focus on the essence
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/21/24 06:14 AM CDT]
+synopsis: let's take the next step
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/20/24 19:04 PM CDT]
+synopsis: one small step at a time
+
+details:
+
+When we write a lot of code, our senses should perk up and say, Stop, think.
+
+------------------------------------------------------------------------------
+[Reviewed 10/20/24 06:15 AM MDT]
+synopsis: let's move forward to the first test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/19/24 06:31 AM EDT]
+synopsis~:  let's integrate CI
+
+details:                     
+
+No CI yet.
+
+The CI server is not building assign3 yet. Please fix build.sh to point to assign2 directory to build. If you need help with that please ask.
+
+------------------------------------------------------------------------------

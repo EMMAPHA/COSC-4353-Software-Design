@@ -1,0 +1,54 @@
+[Reviewed 11/07/24 21:29 PM CET]
+synopsis: you're done
+
+details:
+
+yay
+
+------------------------------------------------------------------------------
+[Reviewed 11/07/24 06:26 AM CET]
+synopsis: explicit?
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/05/24 10:10 AM CET]
+synopsis: a few things to clarify
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/04/24 04:49 AM MST]
+synopsis: let's fortify the examples
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/03/24 03:27 AM MST]
+synopsis: a few things to improve
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/02/24 05:39 AM MDT]
+synopsis: good start
+
+details:
+
+1.
+
+Good
+
+2.
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------

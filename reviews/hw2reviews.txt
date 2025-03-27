@@ -1,0 +1,115 @@
+[Reviewed 09/12/24 05:04 AM CDT]
+synopsis: let's take one more look at the relationship
+
+details:
+
+Diagram:
+
+Would it make more sense for the GameUI to aggregate the MasterMindGameLogic?
+Please remove the details in the second boxes for each class.
+
+------------------------------------------------------------------------------
+[Reviewed 09/11/24 04:23 AM MDT]
+synopsis: let's take one more look at the relationship
+
+details:
+
+Diagram:
+
+Does the UI aggregate the logic or is it only association?
+
+Text:
+
+Good details here.
+
+------------------------------------------------------------------------------
+[Reviewed 09/10/24 04:09 AM MDT]
+synopsis~: a few things to tweak
+
+details:
+
+Diagram:
+
+Less is more. Details within the box like 20x6 are not useful in the level of detail expected from this diagram.
+
+Instead of shaded arrow, let us use either open arrow --> for direction or a unshaded triangle for inheritance.
+
+Text:
+
+2.
+There are other languages that are as good or even better. Why are *we* choosing Python?
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------
+[Reviewed 09/09/24 05:12 AM MDT]
+synopsis: let's revisit the design
+
+details:
+
+Diagram:
+
+Let's use solid lines instead of dotted lines.
+
+Do we need two UI? Can't one UI take care of the user interaction for the entire game with different parts focused on collecting the guess and showing the response?
+
+Let's replace the closed arrow with either a open arrow for direction of dependency or a triangle for direction of inheritance.
+
+Is there aggregation or only association?
+
+Text:
+
+1.
+
+This will evolve with the changes we make based on the feedback above.
+
+2.
+
+There are other languages that are as good or even better. Why are *we* choosing Python?
+
+3.
+
+Good work here.
+
+------------------------------------------------------------------------------
+[Reviewed 09/08/24 05:29 AM MDT]
+synopsis: let's structure the details top down
+
+details:
+
+Diagram:
+
+Too much details here. Most of these details are useless from the strategic design point of view, clutters the diagram, makes it hard to focus on the essential details. Avoid placing fields and methods in the diagram at this stage of the design.
+
+We don't name classes with the name "Class" in it.
+
+Let's replace the closed arrow with either a open arrow for direction of dependency or a triangle for direction of inheritance.
+
+Are all relationships one-to-one or do we have any one-to-many relationships?
+
+By Game do we mean GameLogic?
+
+Text:
+
+1.
+
+Let's start with a short introduction to set the context of what we are building (one or two sentences). Then in the following paragraphs let us discuss the design decisions and reasons, the whys, that is leading us to create the design and reference to elements in the diagram along the way.
+
+"The first step would be to create a game class" "That building over there is the..." vs. "We're in what is called the museum district and we have several museums here but also some government building..." An overall view before the specifics. Reason and then the class rather than class which has these things.
+
+2.
+
+Good details on the merits of Python, but there are other languages that are as good or even better. Why are *we* choosing Python?
+
+3.
+
+"The game and feedback classes extend the user interface class. We will have to implement a structure or method to integrate the user interface and the game logic. " Irrelevant detail for this part.
+
+"We will use random module to generate colors randomly" trivial.
+
+"tkinter for the GUI. " interesting, let us expand on this.
+
+What library we may use for writing unit tests?
+What build tool we may run to easily run the tests, etc.
+
+------------------------------------------------------------------------------

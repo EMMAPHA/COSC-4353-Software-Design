@@ -1,0 +1,262 @@
+[Reviewed 11/21/24 05:21 AM MST]
+synopsis: let's move forward
+
+details:
+
+Let's move forward to the next step.
+
+------------------------------------------------------------------------------
+[Reviewed 11/20/24 17:53 PM MST]
+synopsis: let's think
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/20/24 13:38 PM MST]
+synopsis: let's add one more test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/20/24 12:21 PM MST]
+synopsis: lets' write more tests
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/20/24 10:42 AM MST]
+synopsis: WDYT?
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/20/24 10:23 AM MST]
+synopsis: YAGNI
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/20/24 05:28 AM MST]
+synopsis: good so far
+
+details:
+
+Good so far. Let's move forward to the next step.
+
+------------------------------------------------------------------------------
+[Reviewed 11/19/24 18:01 PM MST]
+synopsis: SLAP
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/19/24 05:22 AM MST]
+synopsis: let's discuss
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/18/24 17:32 PM MST]
+synopsis: let's check the tests
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/18/24 16:19 PM MST]
+synopsis: let's write more tests
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/18/24 05:39 AM MST]
+synopsis: let us rethink
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/17/24 17:56 PM MST]
+synopsis: let's check the test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/17/24 09:03 AM MST]
+synopsis: let us rethink
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/17/24 05:16 AM MST]
+synopsis: unnecessary effort
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/16/24 10:03 AM MST]
+synopsis: let's simplify
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/16/24 06:37 AM MST]
+synopsis: let's refactor
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/15/24 16:12 PM MST]
+synopsis: let's move forward to the next step
+
+details:
+
+Let's move forward to the next step.
+
+------------------------------------------------------------------------------
+[Reviewed 11/15/24 06:09 AM MST]
+synopsis: let's refactor
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/14/24 06:34 AM MST]
+synopsis: let's keep it DRY
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/13/24 17:33 PM MST]
+synopsis: let's refactor and move forward
+
+details:
+
+Please see suggestions in files.
+
+Let's move forward to the next two blocks.
+
+------------------------------------------------------------------------------
+[Reviewed 11/13/24 05:10 AM MST]
+synopsis~: let's check the tests
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/12/24 10:14 AM MST]
+synopsis: let's take the next step
+
+details:
+
+Let's take the next step.
+
+------------------------------------------------------------------------------
+[Reviewed 11/12/24 06:47 AM MST]
+synopsis~: let's check the test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/11/24 06:28 AM MST]
+synopsis: let's take the next step
+
+details:
+
+Please see suggestions in files.
+
+Let's take the next step.
+
+------------------------------------------------------------------------------
+[Reviewed 11/10/24 11:24 AM MST]
+synopsis: let's think of design principles
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/10/24 10:48 AM MST]
+synopsis: let's take the next step
+
+details:
+
+Please see suggestions in files.
+
+Let's take the next step.
+
+------------------------------------------------------------------------------
+[Reviewed 11/10/24 10:37 AM MST]
+synopsis: code with vengeance?
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/10/24 07:39 AM MST]
+synopsis: let's rework the tests
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/09/24 20:17 PM MST]
+synopsis: bham
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/09/24 08:09 AM MST]
+synopsis~: no tests listed
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/09/24 07:01 AM MST]
+synopsis: let's go past canary
+
+details:
+
+Let's move past canary.
+
+------------------------------------------------------------------------------

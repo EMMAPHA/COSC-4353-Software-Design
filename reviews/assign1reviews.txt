@@ -1,0 +1,345 @@
+[Reviewed 10/02/24 18:36 PM MDT]
+synopsis: you're done
+
+details:
+
+yay
+
+------------------------------------------------------------------------------
+[Reviewed 10/01/24 07:39 AM MDT]
+synopsis: good so far
+
+details:
+
+Text:
+
+Good
+
+Code:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/30/24 06:58 AM MDT]
+synopsis: nice work
+
+details:
+
+Nice work. Let's focus on the questions in assign1.txt.
+
+------------------------------------------------------------------------------
+[Reviewed 09/29/24 08:05 AM MDT]
+synopsis: run failed
+
+details:
+
+---> pavement.run
+python src/mastermind_gui.py
+Traceback (most recent call last):
+  File "/Users/venkats/agility/svnuh/f24_softwaredesign/kumar_pham/assign1/src/mastermind_gui.py", line 3, in <module>
+    from tkmacosx import Button # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'tkmacosx'
+
+------------------------------------------------------------------------------
+[Reviewed 09/28/24 18:56 PM MDT]
+synopsis: a few things to improve
+
+details:
+
+Let's center the row/columns instead of being all the way to the left.
+
+Please display response on the row before announcing victory or loss.
+
+Let's show colors on the very top color selection row.
+
+------------------------------------------------------------------------------
+[Reviewed 09/28/24 05:23 AM MDT]
+synopsis: let's reduce effort for the player
+
+details:
+
+Clicking on a color on the top pane should show the color in the next row the player can use (first row when we start). We can remove the dropdown Select Color.
+
+We can remove "Submit Guess"
+
+Let's reduce the effort for the player to be clicking down on a list and selecting an element when they could simply click on a color.
+
+------------------------------------------------------------------------------
+[Reviewed 09/27/24 06:16 AM MDT]
+synopsis: Let's make the GUI intuitive to use.
+
+details:
+
+Top panel, colors to choose from. Two columns of rows.
+
+  C C C C C C C C C C
+
+  C C C C C C    B B B B B B
+  C C C C C C    B B B B B B
+  C C C C C C    B B B B B B
+  C C C C C C    B B B B B B
+  C C C C C C    B B B B B B
+  _ _ _ _ _ _    _ _ _ _ _ _
+  _ _ _ _ _ _    _ _ _ _ _ _
+  _ _ _ _ _ _    _ _ _ _ _ _
+  _ _ _ _ _ _    _ _ _ _ _ _
+  _ _ _ _ _ _    _ _ _ _ _ _
+  _ _ _ _ _ _    _ _ _ _ _ _
+  _ _ _ _ _ _    _ _ _ _ _ _
+  _ _ _ _ _ _    _ _ _ _ _ _
+  _ _ _ _ _ _    _ _ _ _ _ _
+  _ _ _ _ _ _    _ _ _ _ _ _
+  _ _ _ _ _ _    _ _ _ _ _ _
+  _ _ _ _ _ _    _ _ _ _ _ _
+  _ _ _ _ _ _    _ _ _ _ _ _
+  _ _ _ _ _ _    _ _ _ _ _ _
+  _ _ _ _ _ _    _ _ _ _ _ _
+
+C is a color (not word). B is either Black, Silver, or Gray.
+_ is an empty space to fill (can be shown as a empty box)
+
+User know show many turns are left based on the number of rows of empty boxes.
+
+------------------------------------------------------------------------------
+[Reviewed 09/27/24 05:47 AM MDT]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a quick review.
+
+------------------------------------------------------------------------------
+[Reviewed 09/26/24 07:26 AM MDT]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/25/24 05:54 AM CDT]
+synopsis: let's tweak the design a bit
+
+details:
+
+Please see suggestions in files.
+
+> paver run
+---> pavement.run
+python src/mastermind_gui.py
+Traceback (most recent call last):
+  File "/Users/venkats/agility/svnuh/f24_softwaredesign/kumar_pham/assign1/src/mastermind_gui.py", line 4, in <module>
+    from src.mastermind import GamePlay, GameStatus
+ImportError: cannot import name 'GamePlay' from 'src.mastermind' (/Users/venkats/agility/svnuh/f24_softwaredesign/kumar_pham/assign1/src/mastermind.py)
+
+
+------------------------------------------------------------------------------
+[Reviewed 09/24/24 21:54 PM CDT]
+synopsis: let's think of the implication
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/24/24 20:26 PM CDT]
+synopsis~: comments found in code
+
+details:
+
+Comments found in code. Got question, drop an email, not write a comment.
+
+------------------------------------------------------------------------------
+[Reviewed 09/24/24 12:08 PM CDT]
+synopsis: let's simplify the tests
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/24/24 06:40 AM CDT]
+synopsis~: let's check the tests
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/23/24 22:11 PM CDT]
+synopsis: where is our code to design/test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/23/24 17:02 PM CDT]
+synopsis: let's improve a few things
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/23/24 14:42 PM MDT]
+synopsis: let's refactor
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/23/24 06:37 AM MDT]
+synopsis: good so far
+
+details:
+
+Good so far. Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/22/24 04:40 AM MDT]
+synopsis: let's think about data types
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/21/24 19:15 PM MDT]
+synopsis: good so far
+
+details:
+
+Good so far. Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/21/24 18:02 PM MDT]
+synopsis: let's turn th implementation to functional style
+
+details:
+
+Good work so far. Let's turn the implementation from imperative style to functional style
+
+------------------------------------------------------------------------------
+[Reviewed 09/21/24 16:39 PM MDT]
+synopsis: let's tweak the tests
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/21/24 16:09 PM MDT]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a quick review.
+
+------------------------------------------------------------------------------
+[Reviewed 09/21/24 10:21 AM MDT]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/21/24 04:17 AM MDT]
+synopsis: let's write minimum code
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/20/24 20:46 PM MDT]
+synopsis: let's write minimum code
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/20/24 19:36 PM MDT]
+synopsis~: let's write minimum code
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/20/24 18:08 PM MDT]
+synopsis: previous review not addressed, found more tests than expected
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/20/24 13:52 PM MDT]
+synopsis~: let's tweak the design
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/20/24 06:38 AM MDT]
+synopsis~: red or yellow in code coverage
+
+details:
+
+Please take a look at the code coverage and make sure the coverage shows 100%.
+After fixing the coverage (or ask for help if you need), please ask for review.
+
+Also, please remove any #Feedback: notes from files before asking for a review.
+
+------------------------------------------------------------------------------
+[Reviewed 09/19/24 06:22 AM MDT]
+synopsis~: build failing, please do not update reviews request when build fails
+
+details:
+
+Please don't update the requestReview.txt when the build is not passing. Instead drop an email asking for help if you need suggestions on how to fix. Once the build passes, please update the review request file for a quick review.
+
+------------------------------------------------------------------------------
+[Reviewed 09/17/24 05:41 AM CDT]
+synopsis~: let's change direction
+
+details:
+
+Please do not commit htmlcov directory as that is generated during build and do not belong in the version control.
+
+Let's change direction. Let us focus on a small action as a first step with as little field/state as possible. Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 09/16/24 05:46 AM CDT]
+synopsis: very nice start
+
+details:
+
+Very nice start. Let's write one or two tests after the canary test and minimum code for those tests to pass.
+
+A CI build has been setup for your project.
+You can see files related to this under assign1.
+
+How does this work?
+When you check in code, the CI build machine wakes up, fetches the latest 
+version of your code, and runs the file build.sh that is under your repository (above assign1). That file in turn runs the build scripts in your assign1 directory.
+
+In case you missed it, please read:
+<https://groups.google.com/g/uhcsf24sd/c/UtlbmTRtJAA/m/8BMXBo0JAQAJ>
+
+Also, please keep an eye on code coverage. To view the code coverage, please 
+run the build using the following command (do not click or double click, 
+instead open the command prompt, cd to your assign1 directory, and then run 
+from there).
+
+paver
+Then take a look at the file (using a browser):
+htmlcov/index.html
+
+------------------------------------------------------------------------------
