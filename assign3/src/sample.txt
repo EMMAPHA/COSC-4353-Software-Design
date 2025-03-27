@@ -1,0 +1,7 @@
+IAD,Dulles Intl,Washington,DC,71,True
+ORD,O'Hare International,Chicago,IL,62,True
+MDW,Midway International,Chicago,IL,60,False
+IAH,George Bush Intercont.,Houston,TX,82,True
+SFO,San Francisco Intl.,San Francisco,CA,59,False
+LAX,Los Angeles Intl.,Los Angeles,CA,84,False
+HOU,Hobby,Houston,TX,80,False

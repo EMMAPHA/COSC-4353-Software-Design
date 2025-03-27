@@ -1,0 +1,104 @@
+Assign3: Due 11:59PM CT November 1 
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+
+
+An airport has IATA code (a three letter string), name, city, state, current temperature in F, and delay (true or false). Write a console program that will accept from the user one of different criteria for sorting multiple airport data and printing to the console. The output should have the airport name in all caps, the other details can be in mixed case, as provided.
+
+The criteria that will be provided by the program are, sort by
+0. Nothing (no sorting)
+1. IATA code
+2. Name
+3. City
+4. State
+5. Delay
+6. Temperature
+7. City and Name (if the city is the same then sort by Name)
+
+Write the program such that if we add a new criteria we will have to add new code, but not change any existing files.
+
+Whereas the data may come from different sources in general, we'll assume that the data is present in a separate source code file, the pseudocode for which is given below:
+
+new Airport("IAD", "Dulles Intl", "Washington", "DC", 71, true)
+new Airport("ORD", "O'Hare International", "Chicago", "IL", 62, true)
+new Airport("MDW", "Midway International", "Chicago", "IL", 60, false)
+new Airport("IAH", "George Bush Intercont.", "Houston", "TX", 82, true)
+new Airport("SFO", "San Francisco Intl.", "San Francisco", "CA", 59, false)
+new Airport("LAX", "Los Angeles Intl.", "Los Angeles", "CA", 84, false)
+new Airport("HOU", "Hobby", "Houston", "TX", 80, false)
+
+
+Please bring forward the practices, techniques, and tools you have learned so far. This includes: 
+Good code quality
+Lightweight design
+Minimum code
+Automated testing                                                         
+Code coverage
+Continuous integration
+
+Once you complete coding, please answer the following:
+
+1. What design principles did you use in this assignment? Discuss.
+
+In this assignment, we used SRP, DRY, DIP, and OCP.
+
+SRP, Single Responsibility Principle, states that a class should have only one reason to change. Each function or class should focus narrowly on one task and perform it well. For this assignment, we initially structured the program to handle multiple responsibilities within one module, but this conflicted with SRP. To address this, we separated each sorting criterion into its own function, enabling each one to fulfill a single role in the program. Additionally, we placed data processing and output logic into distinct areas, ensuring the process_airports function wasn't overloaded with unrelated tasks. This separation of concerns enhances clarity, reusability, and maintainability across the program.
+
+DRY, Don't Repeat Yourself, is a principle to avoid redundant code and effort, which can lead to maintainability issues. Initially, we noticed a potential for duplication in each sorting criterion, as they each needed a sorting mechanism. To follow DRY, we created a general sorting method that accepts a sorting key, which eliminates redundancy in sorting logic across criteria. By centralizing the sorting functionality, the program remains DRY and avoids repetitive, error-prone code, making it simpler to maintain and extend.
+
+DIP, Dependency Inversion Principle, states that abstractions should not depend on details, and details should depend on abstractions. This approach allows for flexibility and reusability. In this assignment, we applied DIP by ensuring that the main processing function (process_airports) did not depend on concrete sorting implementations but rather on abstracted sorting criteria. Each criterion was encapsulated as an independent function, allowing the process_airports function to operate with any sorting criteria that might be added in the future, ensuring the program remains modular and adaptable.
+
+OCP, Open-Closed Principle, states that code should be open for extension but closed for modification. In this assignment, OCP was a primary focus. The structure enables adding new sorting criteria without changing existing code. If a new sorting criterion is needed, it can be introduced as a new function, which process_airports can utilize without modifying its existing logic. This ensures the program is stable, as tested code remains unchanged, yet remains open for future growth, in line with OCP principles.
+
+
+2. Any interesting lessons you learned in this assignment? Discuss.
+
+In this assignment, we learned several critical lessons about data handling, modularization, and debugging that apply to software development as a whole. One of the most striking insights was the importance of correctly ordering and managing data types. When we encountered an issue with mixed-up fields for temperature and delay, it highlighted just how crucial it is to carefully parse and handle data, especially when attributes have similar representations. This kind of error can lead to significant misinterpretations, so even minor oversights in ordering or type casting can have big consequences in the output and functionality.
+
+Another valuable lesson was the power of modularization and separation of concerns. By keeping functions like process_airports and fetch_a_criterion distinct and focusing each function on a single responsibility, we could more easily identify where issues were arising when debugging. This modular approach allowed us to isolate and test each function individually, which streamlined the debugging process and minimized changes to the core functionality. This also makes the code more adaptable in the long term; when we need to add or change sorting criteria, for example, it can be done without impacting the other parts of the system.
+
+Through this process, we gained a better understanding of how small design decisions--like creating clear, single-purpose functions--can make a significant impact on both the readability and maintainability of a codebase. This experience reinforced the importance of meticulous data handling and well-thought-out design, which are skills that are transferable to a wide range of programming tasks.
+
+
+3. Any surprises or things that you did not expect? Discuss.
+
+One surprise we regularly encountered was how often we refactored our code to reduce redundancy and separate responsibilities across different functions. Throughout this process, we discovered new approaches, like inheritance, wrappers, and decorators, which were previously unfamiliar to us. It was both challenging and rewarding to use these new tools and patterns to produce clean, maintainable code.
+
+"What is another way I can try to solve this problem?" became a constant question. While we initially had a predefined approach for processing airport data, we found ourselves frequently implementing new patterns to refine, simplify, and reuse our code. It was surprising to discover so many ways to handle tasks like sorting and filtering airport information effectively.
+
+Using the Dependency Inversion Principle (DIP) to pass specific functions as arguments in sorting and filtering operations was an insightful discovery that opened new solutions to tackle the assignment requirements. This function abstraction enabled us to apply the DRY principle, significantly reducing redundancy while achieving the intended functionality with minimal code.
+
+Total [100]: 79
+Program works as expected [20]:
+All tests pass [10]:
+Test quality [10]:
+Code coverage [10]:
+Design quality [10]:
+
+Design for extensibility to add sort criteria without code change [20]: -20
+    criteria_options = {
+        "0": "none",
+        "1": "iata_code",
+        "2": "name",
+        "3": "city",
+        "4": "state",
+        "5": "delay",
+        "6": "temperature",
+        "7": "city and name"
+    }
+
+violates OCP
+
+Also, violation of OCP in
+    if property_name == "city_and_name_list": 
+        return ["city and name"]
+    
+    if property_name == "name_list": 
+        return ["name"]
+
+
+Code quality [10]:
+Response to questions [10]: -1
+SLAP, YAGNI

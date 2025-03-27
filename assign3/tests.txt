@@ -1,0 +1,30 @@
+x canary test
+
+x process airports takes an empty list and returns an empty list
+
+x process airports takes a single airport list and returns the list
+
+x process airports takes two airport and returns the expected result
+x process airports takes three airports and returns the expected result
+
+x process airports takes two airports and returns the results after sorting by IATA code.
+
+x process airports takes three airports and sorts by name
+x process airports takes three airports and sorts by city
+x process airports takes three airports and sorts by state
+x process airports takes three airports and sorts by delay
+x process airports takes three airports and sorts by temperature
+
+x process airports takes three airports and sorts by city and name
+
+x process airports, given airports with lowercase names, returns airports with name in uppercase
+
+x given a property "name", fetch_a_criterion returns the appropriate criteria function
+
+x given a property "city", fetch_a_criterion returns the appropriate criteria function
+x given a property "city and name", fetch_a_criterion returns the appropriate criteria function
+
+x fetch_criteria returns a list that contains the string "name"
+x fetch_criteria returns a list that contains the string "city and name"
+
+x time for a console program.
