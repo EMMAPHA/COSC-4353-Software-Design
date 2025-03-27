@@ -1,0 +1,60 @@
+x canary test
+
+x given a lower-case letter UpperCase returns upper-case letter
+x given an upper-case letter UpperCase returns upper-case letter
+x given a non-letter symbol UpperCase returns the same symbol
+
+x given an upper-case letter LowerCase returns lower-case letter
+x given a lower-case letter LowerCase returns lower-case letter 
+x given a non-letter symbol LowerCase returns the same symbol
+
+x given a single character Multiplier returns two characters
+x given a non-letter symbol Multiplier returns two symbols
+
+x given a string with lowercase "z", z-blocker removes all lowercase "z" characters 
+x given a string without lowercase "z", z-blocker returns the same string
+x test z-blocker handles uppercase Z
+x test z-blocker handles a non-letter
+
+x given a string with uppercase "Z", Z-blocker removes all lowercase "Z" characters
+x given a string without uppercase "Z", Z-blocker returns the same string
+x test Z-blocker handles lowercase z
+x test Z-blocker handles a non-letter
+
+x given a string with lowercase "k", z-blocker removes all lowercase "k" characters 
+x given a string without lowercase "k", k-blocker returns the same string
+x test k-blocker handles uppercase K
+x test k-blocker handles a non-letter
+
+x given a string with no blocks, process_text returns the same string
+x given a string with Uppercase block, process_text returns uppercase string
+x given a string with z-blocker, process_text removes all lowercase 'z' characters
+x given a string with k-blocker, process_text removes all lowercase 'k' characters
+x given a string with multiplier, process_text duplicates characters
+x given multiple blocks, process_text applies each block in order
+
+x processor takes string "abzde" and uppercase block and Z blocker
+x processor takes string "abzde" and Z blocker and uppercase
+x processor takes string "abzde" and uppercase and multiplier
+x processor takes string "abzde" and Z blocker, uppercase, and multiplier
+
+
+x given the string "uppercase_converter" fetch_block returns the appropriate function
+
+x given the string "lowercase_converter" fetch_block returns the appropriate function
+x given the string "multiplier" fetch_block returns the appropriate function
+x given the string "Z_blocker" fetch_block returns the appropriate function
+x given the string "k_blocker" fetch_block returns the appropriate function
+x given the string "z_blocker" fetch_block returns the appropriate function 
+
+Let's move forward to create the console program
+
+When the program is run, let's read a blocks.txt file from within assign4/data directory. Let the file have the blocks, in sequence: uppercase converter, Z blocker, multiplier
+
+When the program is run, let us list the blocks the user has chosen, in sequence.
+
+Then ask user for a text and display the output of the text processed.
+
+Please make sure to doublecheck everything and look for any improvements in code.
+
+Please remember to address the questions in assign4.txt.

@@ -1,0 +1,74 @@
+Please keep all files related to a homework or an assignment within the appropriate directory. Files checked in outside of specific homework or assignment directory will not be reviewed or graded for that homework/assignment.
+
+Check in and modify files as many times as you like. You will not be able to modify the files after the deadline.
+
+You will work as a pair, both of you are responsible for the completed work in all assignments and homework. Reasonable effort is expected from each person. If you do not check in, you will not receive any scores. When pairing please switch who checks in so there is significant number of check in from each of you.
+
+The deadlines are strict, there will be no extensions. Don't email any code to Venkat or to the mailing list. Your last check in before the deadline will be graded. If your last check in breaks the code, both you and your pair will lose significant points.
+
+Please feel free to ask for frequent reviews. See the reviews/readme.txt file for details on how to ask for reviews.
+
+You can evolve the answers and solutions based on the reviews. Only the latest checkin at the time of review will be looked at. Also the final check in will be the only one graded.
+
+You are still responsible to successfully complete an homework or assignment even if your pair is a no-show. You can request to change pairs at any time and if there is another person in the class willing to pair with you we can make the switch.
+
+A lot of help will be provided in this course, but you have to start early and ask for help along the way.                                          
+
+Please read the academic honesty policy posted on the course mailing list.                   
+
+The above details apply to all homework and assignments in this course.                   
+
+Now to homework #1.
+==============================================================================
+HW1: Due 11:59PM CT September 6
+
+Good design should have high cohesion and both loose and low coupling.
+Discuss the following:
+
+1. What are the consequences of having low cohesions? What are the benefits of high cohesion.
+
+The consequences of low cohesion include increased complexity, which occurs when a module or component performs multiple unrelated tasks. This complexity makes it difficult to understand the module's purpose or behavior. Another consequence is difficult maintenance. Low cohesion means that a change in one part of the module could inadvertently affect other parts because they are not closely related, making maintenance challenging and prone to errors. Additionally, low cohesion results in poor readability and understanding. A module with low cohesion can be confusing and difficult to follow, making it hard for other developers to understand what the module does. This slows down development and leads to errors. The final consequence is testing complications. Low cohesion complicates testing since a single module requires multiple, distinct test cases to cover all its responsibilities, leading to a more complex and arduous testing process.
+
+
+The benefits of high cohesion include improved understandability, ensuring that a module has a clear and focused purpose. This makes it easier to understand what the module does, which is beneficial for both development and maintenance. Another benefit is simplified maintenance. With high cohesion, changes in one part of the module are less likely to affect other parts, making the module easier to maintain and less prone to errors when changes are made. Additionally, high cohesion leads to better readability. Code with high cohesion is more organized and easier to read, improving the efficiency of the development process and reducing the likelihood of errors. The final benefit is easier testing. High cohesion typically requires fewer test cases because it focuses on a single responsibility, making the testing process more straightforward and less time-consuming.
+
+
+2. What are the consequences of tight coupling instead of loose coupling?
+
+Tight coupling refers to a situation where components in a system are strongly interconnected, meaning that a change in one component directly impacts others. This usually occurs when components depend heavily on specific details of another component's implementation rather than on abstract interfaces. Tight coupling implies that the components are tightly linked, making them less flexible and harder to maintain.
+
+One significant consequence of tight coupling is reduced flexibility. When components are tightly coupled, modifying or replacing one component often requires changes in others, leading to a cascade of changes that can be difficult to manage. This affects the system's extensibility, as adding new features may necessitate modifications across multiple components.
+
+Tight coupling particularly impacts code maintainability. It results in a complex structure, which makes maintenance, testing, and debugging more difficult. Since the components are dependent on one another, reusing a single component in a different context becomes challenging without bringing along the entire set of dependencies. Any necessary changes become harder to implement, which increases the risk of introducing errors and bugs. The tight dependencies make it difficult to isolate and resolve issues, leading to higher maintenance costs and longer development cycles. A tightly coupled system can still be scalable and performant, but it might be less flexible and harder to maintain over time compared to a loosely coupled system.
+
+Loose coupling, on the other hand, means that components are independent and communicate through well-defined interfaces, without relying on each other's internal workings. This allows for greater flexibility and maintainability, as changes to one component do not necessitate changes in others. Components can be modified, or replaced, making the system more adaptable and easier to manage. Loose coupling enhances extensibility, as new features can be added with minimal impact on existing components, and it promotes modularity, enabling easier testing and debugging.
+
+In essence, tight coupling often involves components depending on specific implementation details, making the system rigid and difficult to maintain. In contrast, loose coupling involves components depending on interfaces or abstractions rather than concrete implementations, which allows for a more adaptable and resilient system.
+
+
+3. What are the consequences of a piece of code having a large number of dependencies (outgoing)?
+
+The consequences of a piece of code having a large number of dependencies include increased complexity and maintenance challenges. Since the code relies on multiple external components, it becomes more complex, making it harder to understand how the code works and increasing the difficulty of maintaining and debugging it. Managing a large number of outgoing dependencies requires regular updates and monitoring to ensure compatibility. If a dependency is updated or deprecated, the code may need to be modified, leading to an increased maintenance burden.
+
+Additionally, the code becomes more fragile. With numerous outgoing dependencies, any change or failure in one of those dependencies can have a ripple effect, potentially causing the entire system to break down. The more dependencies there are, the more points of potential failure, making the code less stable overall.
+
+Testing complications do arise. The more outgoing dependencies a piece of code has, the more complicated testing becomes. Each dependency must be accounted for in tests, making the testing process more difficult and time-consuming.
+
+Performance issues are another concern. Each outgoing dependency can introduce latency or performance bottlenecks. The more dependencies there are, the greater the chance of encountering performance issues. Finally, there is the overhead of dependency management. Keeping track of and managing numerous dependencies adds overhead to the project. Developers must ensure that all dependencies are up-to-date, compatible, and secure, which can be time-consuming and prone to errors.
+
+
+4. What are the consequences of a large number of dependencies on a piece of code (incoming)?
+
+Incoming dependencies refer to the modules, components, or systems that depends on a specific piece of code. They are the parts of the system that depend on the code in question to function correctly. A large number of incoming dependencies introduces several challenges and can make the code in context fragile or resistant to change.
+
+Firstly, an increase in the number of incoming dependencies makes the code more rigid. When many other parts of the system rely on a particular piece of code, any modification to that code becomes risky. Changes might require extensive testing to ensure that none of the dependent modules break. This can lead to a maintenance burden, as developers must carefully assess the impact of every change.
+
+Additionally, while a large number of incoming dependencies does not inherently mean tight coupling, it can increase the potential for fragility. If the code being depended upon is not designed with flexibility in mind, it can become difficult to modify without affecting other parts of the system. This resistance to change can stifle development and innovation, making it harder to adapt the system to new requirements.
+
+Finally, if the code in question fails or contains a bug, it can have a cascading effect on all the modules that depend on it. This can increase the likelihood of system-wide failures, making the overall system more prone to errors. Testing and ensuring data integrity become more complex as the number of incoming dependencies grows, requiring more robust testing strategies.
+
+
+Total [10]: 10
+
+Please see https://www2.cs.uh.edu/~svenkat/fall2024sd/scores.pdf
+

@@ -1,0 +1,113 @@
+Assign4: Due 11:59PM CT November 22
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late.
+
+In this assignment we will design a logical characters processor. The processor will receive a series of characters as input and produce a series of characters as output. The processor may house any number of processing blocks. Not all blocks that are available may be used when creating a processor. Also, a block may be used more than once. The order in which the blocks are used may also vary.
+                                                            
+
+		...input... -> | block1 block2 block3 ... | -> ...output...
+                           Processor
+
+Let's discuss some examples of blocks and then revisit the processor.
+
+1. UpperCaseConverter Block
+	Given a character, this block will send out or return the character in uppercase.
+
+2. LowerCaseConverter Block
+	Given a character, this block will send out or return the character in lowercase.
+	
+3. Multiplier Block
+  Given a character, this block will send out or return two of the same character. For example, if it received 'a', it will produce 'aa'. If it receives '1', it will produce '11'.
+
+4. z-blocker Block
+  Given a character, if the character is a lowercase 'z', this block will not return or produce anything. If it is any other character, it will produce the given character as output. For example, 'a' will result in an output of 'a'.
+
+5. Z-blocker Block
+	This block will not return or produce an output if the character given is an uppercase 'Z'.
+	
+6. k-blocker Block
+   This block will not return or produce an output if the character given is lowercase 'k'.
+
+The program should allow end users to create other similar blocks they like.
+
+The end user should be able to create a processor using any series of blocks.
+
+For example, a user may create a processor with the following series of blocks:
+	UpperCaseConverter - Z-blocker - LowerCaseConverter
+	
+After creating this processor, if a user were to send the following series of characters as input:
+
+	11abcdabcdabcdzzaazzabcd
+
+it will return the following output:
+
+	11abcdabcdabcdaaabcd
+
+In addition to designing a few sample blocks and the processor, we will create a console based driver program.
+	
+Design the program in such a way that:
+
+1. A user can specify the blocks available for use before the program starts. This should include pre-defined blocks and user created blocks.
+
+2. The user can specify, through a file, the blocks they'd like to use and the order or sequence in which they'd like to use them.
+
+Think through the overall design of the program first. Then start with one small, but interesting and valuable part, and evolve the design and code incrementally.
+
+After completing the assignment answer these questions:
+
+1. What did you learn in this assignment?
+
+In this assignment, we learned how to design and implement a modular character processing system composed of customizable and extendable functional blocks. This experience deepened our understanding of key software engineering principles, particularly modularity, reusability, and separation of concerns. By developing self-contained blocks like uppercase_converter, lowercase_converter, and blocker, we practiced creating reusable components that perform specific, independent tasks.
+
+We applied the Single Responsibility Principle (SRP) by ensuring each block function handled a single, specific task. For example, the uppercase_converter only converts characters to uppercase, and the blocker function only removes specific characters. This helped maintain clarity in the design and made each block easier to modify or extend independently.
+
+The Single Level of Abstraction Principle (SLAP) was followed by separating higher-level orchestration (such as processing a sequence of blocks) from lower-level details (like filtering invalid input), thus improving the clarity of each function. This ensured that each function operated at a single level of abstraction, avoiding confusion between high-level logic and low-level operations.
+
+A key takeaway was the use of the fetch_block function, which allowed us to dynamically load block functions based on user input. This provided flexibility, enabling the system to process characters through different block sequences without altering the core logic. This dynamic loading reinforced the importance of designing systems that are open to extension but closed to modification, in line with the Open-Closed Principle (OCP).
+
+The Don't Repeat Yourself (DRY) principle was applied by consolidating repetitive functions (e.g., multiple blocking functions for different characters) into a more generalized function. This not only reduced code duplication but also made it easier to modify or extend behavior without introducing new code that would repeat the same logic.
+
+Testing played a crucial role in the assignment. Writing automated unit tests for each block ensured their correctness in a variety of scenarios and helped us anticipate edge cases. For example, we addressed differences between uppercase and lowercase inputs in the blocker block and ensured the system performed as expected, both when blocks functioned independently and when combined.
+
+Finally, the assignment emphasized incremental development and debugging. Using canary tests and validating components in small iterations ensured the system's reliability, helping us identify and resolve issues early in the development process. This iterative approach strengthened our problem-solving skills and attention to detail while also adhering to the You Aren't Gonna Need It (YAGNI) principle. For instance, we refrained from adding unnecessary features like dynamic block registration, which was not required for the current implementation, allowing us to focus on the essential features.
+
+
+2. What design principles did you use? List each one of them, discuss what this principle is, and give example(s) of where specifically you used it in this assignment.
+
+In this assignment, we used SRP, DRY, SLAP, OCP, and YAGNI.
+
+SRP, Single Responsibility Principle, states that a class should have only one reason to change. To adhere to SRP, we refactored the process_text function by separating concerns. Initially, this function combined multiple responsibilities, such as applying blocks and dynamically handling block behavior. We improved modularity and readability by introducing the helper function apply_block, which handles the application of blocks. This allowed process_text to focus solely on orchestrating the sequence of block applications, while apply_block managed the logic of applying each individual block. Additionally, instead of hardcoding specific behaviors (e.g., block == multiply), we ensured that each block was processed independently, maintaining a clear responsibility for each function.
+
+DRY, Don't Repeat Yourself, is a principle to prevent duplication of code and effort. In the original version of the code, we had several similar functions like k_blocker, z_blocker, and Z_blocker, each designed to remove a specific character. These functions were repetitive, violating the DRY principle. We consolidated these functions into a single char_blocker function, which accepts a character to block as an argument. This generalization eliminated the duplication and made it easier to extend or modify the behavior. For instance, adding a new character to block no longer required creating an entirely new function, simply passing the character as an argument to char_blocker.
+
+SLAP, Single Level of Abstraction Principle, advises that functions should operate at a single level of abstraction, ensuring that they don't mix high-level logic with low-level implementation details. The original process_text function violated SLAP by combining high-level logic (such as processing the blocks) with low-level operations (e.g., filtering out None values). To resolve this, we introduced apply_block to handle the lower-level task of applying individual blocks, leaving process_text to focus on high-level orchestration. This change improved the clarity of the code, ensuring that process_text stayed focused on the sequence of block applications without being overwhelmed by low-level details, making the code more readable and easier to maintain.
+
+OCP, Open Closed Principle, states that code should be open for extension, but closed for modification. Initially, the process_text function included hardcoded conditions for handling specific blocks (e.g., block == multiply), which tightly coupled the implementation to certain block types, violating OCP. We refactored this by removing the hardcoded conditions and treating blocks uniformly in the apply_block function. This allowed us to add new blocks without modifying the existing code, following the OCP principle. By making the code open to extension through the flexible apply_block function, we ensured that adding new block types could be done without changing the core logic of the program.
+
+YAGNI, You Aren't Gonna Need It, advises against adding functionality until it is necessary. Initially, we included a _block_registry dictionary and functions like register_block and fetch_block to dynamically manage blocks. However, upon reviewing the assignment's requirements, we found that this functionality was not needed. Following the YAGNI principle, we removed these unnecessary components, simplifying the codebase and ensuring that our implementation remained focused on the core requirements of the assignment. This streamlined approach helped avoid overcomplicating the design with features that were not necessary at the moment.
+
+
+3. What design patterns did you use? List each one of them, discuss what this pattern is, and give example(s) of where specifically you used it in this assignment.
+
+Compose Method Pattern: The Compose Method pattern simplifies complex logic by dividing it into smaller, focused methods, improving readability and maintainability. In this assignment, the process_text function uses this pattern by delegating the orchestration of transformations to apply_block, which handles multiple text transformations sequentially. While process_text focuses on managing the sequence of operations, apply_block applies each individual block transformation to the text, making the overall process modular and easier to manage.
+
+Decorator Pattern: The Decorator Pattern dynamically extends functionality without modifying the original object. Blocks like uppercase_converter, lowercase_converter, and blocker act as decorators, sequentially transforming the input text. For example, applying uppercase_converter converts the text to uppercase, while blocker removes specific characters. This pattern allows blocks to be composed flexibly, preserving independence and enabling them to be applied in any order.
+
+Decorator with Lambda Pattern: An extension of the Decorator Pattern, lambda functions simplify the creation of dynamic transformations. For instance, in char_blocker.py, the blocker function generates a lambda to filter specific characters. This is used in blocks like k_blocker and z_blocker, where the lambda removes or retains characters based on user input. This approach combines the benefits of decorators with lightweight, dynamic function generation.
+
+Factory Method Pattern: The Factory Method pattern centralizes and abstracts object creation, enhancing extensibility. In this assignment, the fetch_block function demonstrates this pattern by dynamically retrieving block functions based on user input. Instead of hardcoding logic for each block, fetch_block abstracts the process, enabling the addition of new blocks without modifying existing code. This adheres to the Open-Closed Principle, allowing easy future enhancements.
+
+Iterator Pattern: The Iterator Pattern encapsulates the logic for traversing elements in a collection. In this assignment, the apply_block function uses this pattern to process a sequence of blocks applied to the text. By abstracting the iteration logic, it ensures consistent application of transformations while keeping the process_text function focused on orchestration. This modular approach improves maintainability and simplifies updates.
+
+
+Total [100]: 90
+Program works as expected [10]:
+Program is graceful on failure [10]: -10
+All tests pass [10]:
+Test quality [10]:
+Code coverage [10]:
+Design quality [10]:
+Designed for extensibility without code change [20]:
+Code quality [10]:
+Response to questions [10]:

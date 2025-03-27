@@ -1,0 +1,55 @@
+HW4 Due 11:59PM December 06
+
+***Please review the top part of ../hw1/hw1.txt***
+***There will be no reviews for this Homework***
+***Please remember to follow the things that were emphasized throughout this course on writing***
+***Please see the details in the requestReviews.txt file***
+
+Feel free to give answers collectively, and also if you want to, you can call out something specific to yourself different from your team member. Bring out your learnings and reflect on them here. Take the time to write.
+
+Please remember to write in multiple short paragraphs. Bring out as much details and depth as you can, to reflect on your learnings and insights.
+
+1. What did you essentially learn in this course about design?
+                                
+Please provide individual responses to this question here (state your name and write in short paragraphs below that).
+
+---Dhanush Kumar---
+
+In this software design course, I gained a deep appreciation for the principles and methodologies that underpin effective software architecture. One of the most critical takeaways was understanding how design decisions impact the long-term maintainability and scalability of software systems. Concepts such as modularity, abstraction, and loose coupling were more than just theoretical ideas as they became practical tools to create robust and flexible systems.
+
+A particularly valuable lesson was the importance of identifying and managing dependencies. Through real-world examples and assignments, I learned how to design systems where components depend minimally on one another, fostering greater independence and extensibility. This understanding also helped me appreciate the trade-offs between tightly coupled and loosely coupled designs and how these choices influence code readability, testing, and modification efforts.
+
+Another key insight was how design patterns can serve as a toolkit for solving common problems in a structured way. Patterns like Singleton, Factory, and Observer were not only introduced but explored in-depth, allowing me to see how they simplify complex designs and improve communication among team members. Applying these patterns to course projects gave me a practical understanding of their benefits and limitations.
+
+What stood out to me personally was how crucial it is to involve stakeholders early in the design process. User-centered design principles, such as gathering feedback through prototypes and iterative testing, became central to my approach. I saw how aligning technical goals with user needs early on minimizes rework and ensures that the software delivers meaningful value. One of the most challenging yet rewarding aspects was learning to balance technical constraints with creative problem-solving.
+
+Additionally, working as a pair highlighted the importance of collaboration in software design. My partner brought unique perspectives, and learning to integrate diverse ideas into a cohesive design was a growth experience. Peer reviews and discussions with the professor often revealed blind spots in my understanding and encouraged me to think critically about my assumptions.
+
+In essence, the course taught me that software design is as much about people and processes as it is about code. It emphasized the iterative nature of design, where continuous learning, adaptation, and feedback are essential for creating impactful systems. This reflective approach has reshaped how I view problem-solving in software development, encouraging me to prioritize adaptability, clarity, and user needs in all future projects.
+
+---Emma Pham---
+
+When it comes to design, I've learned that simplicity is essential. Complexity often invites issues, and the more complex a design becomes, the harder it is to make changes later without extensive refactoring. I learned that it is important to avoid over-engineering solutions and instead focus on clear, understandable designs. A simple design is more maintainable, and it's easier to build upon as the codebase evolves. Moreover, design should not be static; it should evolve and adapt as the program develops. Flexibility is key to ensuring the codebase remains functional and scalable without becoming unnecessarily complicated. The importance of keeping designs minimal and functional cannot be overstated, and it's essential to ensure that every aspect of the design serves a clear purpose.
+
+Throughout this course, the feedback I received on design principles such as DRY, SRP, OCP, and YAGNI shaped my approach to writing cleaner, more modular code. In Assignment 3, the airport assignment, I focused on the DRY principle by avoiding duplicated logic, particularly when parsing and sorting the data. By ensuring that parsing logic was encapsulated in reusable functions, I was able to maintain a clean codebase and avoid unnecessary repetition. This not only improved the readability of the code but also made it easier to modify and extend the program as new requirements arose. This experience reinforced how powerful it can be to reduce duplication, ultimately saving time and effort in the long term.
+
+In addition to DRY, I found that applying SRP was crucial for maintaining a maintainable and readable codebase. By ensuring that each function and class had a single, well-defined responsibility, I made the program easier to understand and modify. For example, in the airport assignment, I separated the airport loading logic from the sorting criteria. This allowed for greater modularity, and made it easier to test and update the program as needed. I also began to recognize the importance of SRP at the file level, as separating concerns into different files helps to clarify the purpose of each module and makes the code more organized.
+
+In Assignment 4, the character processor, I extended these design principles further. Here, SRP and OCP were critical when designing the processing blocks. I initially considered a rigid, predefined approach, where each block was hardcoded. However, I quickly realized that a more flexible design, which allowed users to define and sequence their own custom blocks, adhered better to OCP. By designing the system to be open to extension but closed to modification, I ensured that the functionality could be expanded in the future without changing the core logic. This decision proved to be more effective in the long term, as it allowed for easier maintenance and future enhancements.
+
+Test-Driven Development (TDD) played a central role in shaping my approach to design throughout both assignments. By focusing on writing tests first, I was forced to think critically about the requirements and the minimal functionality needed to meet them. This encouraged me to embrace YAGNI, where I only implemented features that were absolutely necessary to pass the tests. TDD also made the development process more manageable by breaking down tasks into smaller, more manageable chunks. This iterative approach allowed me to stay focused on one feature at a time and ensure that each part of the design was simple and effective. Ultimately, these principles--simplicity, modularity, and flexibility--combined with TDD, helped me build robust and maintainable solutions for both the airport assignment and the character processor assignment.
+
+
+2. What are some of the general guidelines you would follow when designing?
+
+When designing, the initial step is to analyze the problem and identify the key functionalities and tests. Maintaining a minimalistic approach early on helps avoid unnecessary complexities and ensures clarity. It is equally important to remain flexible and not become overly attached to the initial design, as this could introduce accidental complexity and hinder future development.
+
+In Homework 2, where we designed the Mastermind game, we began with a strategic design that included separate classes for logic and UI. However, during implementation, we simplified this design to focus on core functionalities while maintaining distinct yet cohesive GUI and logic layers. This simplification made debugging and testing easier while preventing unnecessary design complexity that could complicate maintenance.
+
+A key guideline we followed was to keep designs simple, as simpler designs lead to more straightforward development. Test-driven development (TDD) played a significant role in achieving this. Starting with a canary test, we incrementally built functionality one feature at a time. For instance, in Assignment 3, where we worked on the airport assignment, this approach allowed us to verify data parsing and sorting functionalities step by step, maintaining clarity and avoiding overcomplicated code.
+
+Adhering to SOLID design principles ensured our designs were both robust and extensible. The Open-Closed Principle (OCP) allowed us to add features, such as letting the user give up in the Mastermind game, without altering existing logic unnecessarily. The Dependency Inversion Principle (DIP) helped us decouple classes, simplifying testing and enabling easier extensions in both the airport and Mastermind assignments.
+
+The Don't Repeat Yourself (DRY) principle was another valuable takeaway, particularly in Assignment 3. By revisiting and refactoring code to eliminate duplication in sorting and data processing, we improved maintainability and reduced the likelihood of bugs. Overall, principles like DRY, OCP, and DIP, combined with TDD, enabled us to create designs that were adaptable, efficient, and scalable, ensuring high-quality outcomes.
+
+Total[10]: 10
